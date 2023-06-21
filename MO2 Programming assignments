@@ -1,13 +1,183 @@
-
-
-
-# Guessing game
-secret = 7
-guess = 9
-
-if guess < secret:
-    print("Too low")
-elif guess > secret:
-    print("Too high")
-else:
-    print("Just right")
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "5859d22d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Too high\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Guessing game\n",
+    "secret = 7\n",
+    "guess = 9\n",
+    "\n",
+    "if guess < secret:\n",
+    "    print(\"Too low\")\n",
+    "elif guess > secret:\n",
+    "    print(\"Too high\")\n",
+    "else:\n",
+    "    print(\"Just right\")\n",
+    "\n",
+    "\n",
+    "\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "377368d3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Cherry\n"
+     ]
+    }
+   ],
+   "source": [
+    "small = True\n",
+    "green = False\n",
+    "\n",
+    "if small and green:\n",
+    "    print(\"Pea\")\n",
+    "elif small and not green:\n",
+    "    print(\"Cherry\")\n",
+    "elif not small and green:\n",
+    "    print(\"Watermelon\")\n",
+    "else:\n",
+    "    print(\"Pumpkin\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "3a70ec4e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n",
+      "2\n",
+      "1\n",
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "for num in [3, 2, 1, 0]:\n",
+    "    print(num)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "114a017f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "found it!\n"
+     ]
+    }
+   ],
+   "source": [
+    "guess_me = 7\n",
+    "number = 1\n",
+    "\n",
+    "while number <= guess_me:\n",
+    "    if number < guess_me:\n",
+    "        print('too low')\n",
+    "    elif number == guess_me:\n",
+    "        print('found it!')\n",
+    "        break\n",
+    "    else:\n",
+    "        print('oops')\n",
+    "        break\n",
+    "    number += 1\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "2c13ca43",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "found it!\n"
+     ]
+    }
+   ],
+   "source": [
+    "guess_me = 5\n",
+    "\n",
+    "for number in range(10):\n",
+    "    if number < guess_me:\n",
+    "        print('too low')\n",
+    "    elif number == guess_me:\n",
+    "        print('found it!')\n",
+    "        break\n",
+    "    else:\n",
+    "        print('oops')\n",
+    "        break\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7c58f1a9",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
