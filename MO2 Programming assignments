@@ -1,0 +1,13 @@
+
+
+
+# Guessing game
+secret = 7
+guess = 9
+
+if guess < secret:
+    print("Too low")
+elif guess > secret:
+    print("Too high")
+else:
+    print("Just right")
